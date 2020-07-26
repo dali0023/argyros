@@ -1,0 +1,2332 @@
+
+
+/*-----------------------------------------------------------------------------------*/
+/*    1.     Default CSS */
+/*-----------------------------------------------------------------------------------*/
+.main_wrapper {
+    height: 100%;
+    width: 100%;
+}
+img {
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+f_left {
+    float: left;
+}
+f_right {
+    float: right;
+}
+.fix {
+    overflow: hidden;
+}
+blockquote {
+    border-left: 0;
+    margin: 0;
+    padding: 0;
+}
+/* 1.1 Spacing
+   ===================================
+*/
+.section_padding_100 {
+    padding: 100px 0;
+}
+.section_padding_bottom {
+    padding-bottom: 100px;
+}
+.section_padding_top {
+    padding-top: 100px;
+}
+.section_padding_top50 {
+    padding-top: 50px;
+}
+.section_padding_bottom50 {
+    padding-bottom: 50px;
+}
+.section_padding_50 {
+    padding: 50px 0;
+}
+
+/* 1.2 Typographyy
+   ===================================
+*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #a2a2a2;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.section_hedings, .section_hedings_white {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 30px;
+}
+.section_hedings span, .section_hedings_white span {
+    color: #00beff;
+}
+.section_hedings {
+    color: #22313f;
+    background: url(../img/section_headings_bg.png) no-repeat scroll 0 bottom;
+}
+.section_hedings_white {
+    color: #fff;
+    background: url(../img/section_headings_white_bg.png) no-repeat scroll 0 bottom;
+}
+
+/* 1.3 hover and focus effect
+   ===================================
+*/
+/* this code is for hover */
+.footer_top .widget ul li a:hover {
+    color: #fdc236;
+    text-decoration: underline;
+}
+.footer_top .widget_footer_social a:hover {
+    color: #202e31;
+    background-color: #00beff;
+    border: 1px solid #00beff;
+}
+.single_blog_page .blog_text h3 a:hover, .header_top_wrapper ul li a:hover, .about_banner_area_content ul li a:hover {
+    color: #00beff;
+}
+
+/* =-=-=-=-=-=-=-=- this code is for blog-area hover =-=-=-=-=-=-=-=-=- */
+.blog_area figure:hover figcaption:after, .blog_page figure:hover figcaption:after {
+    height: 100%;
+    width: 100%;
+}
+.blog_area figure:hover figcaption h3 a, .blog_area figure:hover figcaption h5, .blog_page figure:hover figcaption h3 a, .blog_page figure:hover figcaption h5 {
+    color: #fff;
+}
+.blog_area figure:hover figcaption, .blog_page figure:hover figcaption {
+    height: 126px;
+}
+.blog_area figure:hover figcaption i, .blog_page figure:hover figcaption i {
+    right: 30px;
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+
+
+/* this code is for button hover */
+.carousel-caption .hero_btn_wrapper:before, .accordion_button_wrapper:before, .submit_button:before, .contact_page_btn:before, .single_blog_comment_btn:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 50%;
+    transition: 0.5s;
+}
+.carousel-caption .hero_btn_wrapper:after, .accordion_button_wrapper:after, .submit_button:after, .contact_page_btn:after, .single_blog_comment_btn:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 50%;
+    transition: 0.5s;
+}
+.carousel-caption .hero_btn_wrapper:before, .accordion_button_wrapper:before, .submit_button:before,  .carousel-caption .hero_btn_wrapper:after, .accordion_button_wrapper:after, .submit_button:after {
+    background-color: #fff;
+}
+.contact_page_btn:before, .contact_page_btn:after, .single_blog_comment_btn:before, .single_blog_comment_btn:after {
+    background-color: #22313f;
+}
+.carousel-caption .hero_btn_wrapper:hover:before, .carousel-caption .hero_btn_wrapper:hover:after, .accordion_button_wrapper:hover:before, .accordion_button_wrapper:hover:after, .submit_button:hover:before, .submit_button:hover:after, .contact_page_btn:hover:before, .contact_page_btn:hover:after, .single_blog_comment_btn:hover:before, .single_blog_comment_btn:hover:after {
+    height: 50%;
+}
+.carousel-caption .hero_area_btn:hover, .accordion_top_button_area:hover, .form_wrapper form input[type="submit"]:hover {
+    border: 1px solid #22313f;
+    color: #22313f;
+}
+.accordion_top_button_area:hover a {
+    color: #22313f;
+}
+.form_wrapper form input[type="submit"], .accordion_top_button_area, .carousel-caption .hero_area_btn, .contact_one .contact_left_content form input[type="submit"], .contact_two .contact_right form input[type="submit"] {
+    transition: 0.1s ease 0.1s;
+}
+
+/* this code is for focus */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 10000px white inset !important;
+    -webkit-text-fill-color: #a2a2a2 !important;
+}
+a:focus {
+    outline: none;
+}
+.contact_one .contact_left_content form input[type=text]:focus, .contact_one .contact_left_content form input[type=email]:focus, .contact_two .contact_right form input[type=text]:focus, .contact_two .contact_right form input[type=email]:focus, .contact_one .contact_left_content textarea:focus, .contact_two .contact_right textarea:focus {
+    border: 1px solid #00beff;
+}
+
+/* 1.4 Transition
+   ===================================
+*/
+.header_area .mainmenu ul#nav li a, .header_area .mainmenu ul#nav li:before, .advisor_area figure figcaption h6, .advisor_area figure figcaption, .advisor_area figure figcaption:before, .advisor_area figure:before, .blog_area figure > figcaption i, .blog_area figure > figcaption h3 a, .blog_area figure > figcaption h5, .blog_area figcaption:after, .blog_area figure > figcaption, .footer_top .widget ul li a, .footer_top .widget_footer_social a, .project_area figure figcaption h4 a, .header_area .mainmenu ul li ul.sub-menu, .hero_area_control, .service_area_control, .service_page .single_service_right_content, .single_service_main_content_wrapper .widget_service_link ul li, .widget_service_link_text h5 , .widget_service_link_icon img, .advisor_social i, .project_area figure figcaption h6, .project_area figure figcaption:before, .project_version_two .project_area figure figcaption, .project_version_two .project_detail, .blog_page figure > figcaption i, .blog_page figure > figcaption h3, .blog_page figure > figcaption h5, .blog_page figcaption:after, .blog_page figure > figcaption, .blog_content_pagination ul li a, .single_blog_page .blog_text h3 a, .header_top_wrapper ul li a, .about_banner_area_content ul li a, .contact_one .contact_left_content form input[type=text], .contact_one .contact_left_content form input[type=email], .contact_two .contact_right form input[type=text], .contact_two .contact_right form input[type=email], .contact_one .contact_left_content textarea, .contact_two .contact_right textarea, .project_version_three .project_area figure figcaption, .project_version_three .project_detail {
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.carousel-inner > .item {
+    -webkit-transition: 0.5s ease-in-out left;
+    transition: 0.5s ease-in-out left;
+}
+.service_area .carousel.vertical .item {
+    -webkit-transition: 0.6s ease-in-out top;
+    transition: 0.6s ease-in-out top;
+}
+.header_area .mainmenu ul#nav > .search_box:hover > ul {
+    transition: 0.3s ease 0s;
+    -webkit-transition: 0.3s ease 0s;
+    -o-transition: 0.3s ease 0s;
+    -moz-transition: 0.3s ease 0s;
+}
+.header_area .mainmenu ul#nav > .search_box > ul {
+    transition: 0.5s ease 0.5s;
+    -webkit-transition: 0.5s ease 0.5s;
+    -o-transition: 0.5s ease 0.5s;
+    -moz-transition: 0.5s ease 0.5s;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    2.     header_area CSS
+/*-----------------------------------------------------------------------------------*/
+.header_area {
+    background-color: #f3f3f3;
+    position: relative;
+}
+.header_area .logo {
+   padding: 34px 0;
+}
+.header_area .logo img{
+    height: 64px;
+    width: 85px;
+}
+.header_area .mainmenu {
+    text-align: right;
+    margin-top: 75px;
+}
+.header_area .mainmenu ul#nav {
+}
+.header_area .mainmenu ul#nav li {
+    display: inline-block;
+    position: relative;
+}
+.header_area .mainmenu ul#nav li:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #00beff;
+}
+.header_area .mainmenu ul#nav li.current_page_item:before {
+    width: 100%;
+    height: 3px;
+    left: 0;
+}
+.header_area .mainmenu ul#nav li:hover:before {
+    width: 100%;
+    margin: auto;
+    left: 0;
+}
+.header_area .mainmenu ul#nav li a {
+    display: block;
+    padding-bottom: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #233240;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.header_area .mainmenu ul#nav li ul {
+    text-align: left;
+}
+.header_area .mainmenu ul#nav li ul li a {
+    padding-left: 15px !important;
+}
+.header_area .mainmenu ul#nav li.current_page_item a {
+    color: #00beff;
+}
+.header_area .mainmenu ul#nav li:hover a {
+    color: #00beff;
+}
+
+/* this code is for sub-menu */
+
+.header_area .mainmenu ul li ul.sub-menu {
+    position: absolute;
+    left: 0;
+    width: 245px;
+    background-color: #fafafa;
+    border: 6px solid rgba(245, 171, 53, .45); /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: -9;
+    top: 100%;
+    text-align: center;
+    -webkit-transform: perspective(600px) rotateX(-90deg);
+    transform: perspective(600px) rotateX(-90deg);
+    -webkit-transform-origin: 0 0 0;
+    -ms-transform-origin: 0 0 0;
+    transform-origin: 0 0 0;
+    vertical-align: top;
+    visibility: hidden;
+}
+.header_area .mainmenu ul li ul.sub-menu li {
+    display: block!important;
+    border-bottom: 1px solid #e6e6e6;
+}
+.header_area .mainmenu ul li ul.sub-menu li a {
+    padding: 15px 0!important;
+    display: block;
+}
+.header_area .mainmenu ul li ul.sub-menu li:last-child {
+    border: none;
+}
+.header_area .mainmenu ul li:hover ul.sub-menu {
+    top: 100%;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+    z-index: 9999999;
+    opacity: 1;
+    overflow: visible;
+    -webkit-transform: perspective(600px) rotateX(0deg);
+    transform: perspective(600px) rotateX(0deg); 
+}
+.header_area .mainmenu ul#nav li:hover ul.sub-menu li:before {
+    background-color: transparent;
+}
+.header_area .mainmenu ul#nav li:hover ul.sub-menu li a {
+    color: #22313f;
+}
+
+/* this code is for search box */
+
+.header_area .mainmenu ul#nav li.search_box:before {
+    display: none;
+}
+.header_area .mainmenu ul#nav li.search_box {
+    border: 2px solid #00beff;
+    height: 33px;
+    line-height: 30px;
+    width: 33px;
+    text-align: center;
+    padding: 0;
+    color: #00beff;
+}
+.header_area .mainmenu ul#nav > .search_box {
+    padding-bottom: 24px;
+}
+.header_area .mainmenu ul#nav > .search_box:hover > ul {
+    top: 57px;
+    left: auto;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+}
+
+.header_area .mainmenu ul#nav > .search_box > ul {
+    background-color: #fff;
+    left: auto;
+    right: 0;
+    position: absolute;
+    text-align: left;
+    z-index: 99999 !important;
+    top: 70px;
+    max-width: 480px;
+    text-align: right;
+    width: 480px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    visibility: hidden;
+}
+
+.header_area .mainmenu ul#nav > .search_box > ul li, .header_area .mainmenu ul#nav > .search_box > ul li a {
+    box-sizing: border-box;
+    display: block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.search_box .search_form {
+    padding: 30px;
+}
+.search_form form input[type=search] {
+    border-color: #acacac;
+    border-radius: 0;
+    box-shadow: none;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #22313f;
+    padding: 0 20px;
+    color: #22313f;
+}
+.search_form form input[type=submit] {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #22313f;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    2.1     header_area_top CSS
+/*-----------------------------------------------------------------------------------*/
+.header_top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.header_top_wrapper {
+    background: url(../img/header_top_bg.jpg) repeat scroll 0 0 / cover;
+    position: relative;
+    z-index: 9;
+    border-radius: 0 0 0 30px;
+}
+.header_top_wrapper:before {
+    content: "";
+    height: 100%;
+    left: 100%;
+    position: absolute;
+    top: 0;
+    width: 10000px;
+    background: url(../img/header_top_bg.jpg) repeat scroll 0 0 / cover;
+}
+.header_top_wrapper ul {
+    padding: 0 7px;
+    padding-right:0;
+    text-align: right;
+}
+.header_top_wrapper ul li {
+    display: inline-block;
+}
+.header_top_wrapper ul li a {
+    padding: 15px 4px;
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    text-transform: initial;
+}
+.header_top_wrapper ul li a i {
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    3.     hero_area CSS
+/*-----------------------------------------------------------------------------------*/
+.hero_area .carousel.slide, .hero_area .carousel-inner {
+    height: 600px;
+}
+.hero_area_slider_caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+.hero_table {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.hero_table_cell {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.hero_area {
+    position: relative;
+}
+.hero_area .item:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18,26,33,0.9);
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.hero_area_control {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #11171d;
+    z-index: 99;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+}
+.hero_area_control:hover, .hero_area_control:focus {
+    color: #00beff;
+}
+.hero_area_control.left {
+    left: 40px;
+}
+.hero_area_control.right {
+    right: 40px;
+    left: auto;
+}
+.hero_area .carousel-caption {
+    height: 100%;
+    left: 0;
+    padding: 0;
+    right: 0;
+}
+.carousel .item {
+	min-height: 350px; 
+	height: 100%;
+	width:100%; 
+}
+/* Animation delays */
+.carousel-caption h3:first-child {
+	-webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.carousel-caption h3:nth-child(2) {
+	-webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.carousel-caption .hero_btn_wrapper {
+	-webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+/* carousel caption */
+.carousel-caption h3.hero_area_top_text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    background: url(../img/section_headings_white_bg.png) no-repeat scroll center bottom;
+    padding-bottom: 30px;
+}
+.carousel-caption h3 {
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 35px;
+}
+.carousel-caption .hero_btn_wrapper {
+    width: 240px;
+    height: 60px;
+    background-color: #00beff;
+    margin: 30px auto 0;
+    position: relative;
+}
+.carousel-caption .hero_area_btn {
+    width: 230px;
+    height: 50px;
+    background-color: transparent;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    margin: 5px 0 0 0;
+    position: relative;
+    z-index: 9999;
+}
+.carousel-caption a {   
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color:#fff;
+}
+.accordion_button_wrapper:hover .accordion_top_button_area a{
+    color:#22313f;
+}
+.accordion_button_wrapper:hover .accordion_top_button_area {
+    color:#22313f;
+        border: 1px solid #22313f;
+}
+/*-----------------------------------------------------------------------------------*/
+/*    4.     about_area CSS
+/*-----------------------------------------------------------------------------------*/
+.about_area {
+    padding: 120px 0 100px;
+    overflow-x: hidden;
+}
+.about_area h2.section_hedings {
+    margin-bottom: 25px;
+}
+.about_area_left {
+    line-height: 32px;
+    position: relative;
+}
+.about_area_left:after {
+    position: absolute;
+    content: "";
+    top: -44%;
+    left: -14%;
+    width: 163px;
+    height: 199px;
+    background-size: cover;
+    background-image: url(../img/abouthome.png);
+    opacity: 0.03;
+    filter: alpha(opacity=3);
+    z-index: -9;
+}
+.values_area_left:after {
+    left: -7%;
+    
+}
+.single_about_area_content {
+    float: left;
+    width: 33%;
+    overflow: hidden;
+    padding-top: 40px;
+}
+.about_icon {
+    float: left;
+    width: 40px;
+    line-height: 65px;
+}
+.about_icon i {
+    font-size: 34px;
+    color: #00beff;
+    vertical-align: middle;
+}
+.about_text {
+    padding-left: 55px;
+    font-size: 14px;
+    color: #233240;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.about_text span {
+    display: block;
+    font-size: 24px;
+}
+.about_area_right {
+    box-shadow: 0 0 38px 0 rgba(0,0,0,.11);
+    border-radius: 30px 0 30px 0;
+}
+.about_area_right img {
+    border-radius: 30px 0 30px 0;
+    border: 10px solid #fff;
+}
+.about_area_right img.shadow {
+    opacity: 0.07;
+    filter: alpha(opacity=7);
+    position: absolute;
+    left: 170px;
+    top: 131px;
+    z-index: -9999;
+    border: none;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*           about_page CSS
+/*-----------------------------------------------------------------------------------*/
+
+/* this code is for about page banner area */
+
+.about_banner_area {
+    height: 250px;
+    position: relative;
+}
+.about_banner_area:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18,26,33,0.9);
+    z-index: 9;
+}
+.about_banner_area_bg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: url(../img/hero_area_bg_1.jpg) no-repeat scroll 0 0 / cover;
+}
+.about_banner_area_content {
+    position: relative;
+    z-index: 99;
+    text-align: center;
+}
+.about_banner_area_table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.about_banner_area_table_cell {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+.about_banner_area_content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: url(../img/section_headings_white_bg.png) no-repeat scroll center bottom;
+    padding-bottom: 20px;
+}
+.about_banner_area_content ul {
+    padding-top: 20px;
+}
+.about_banner_area_content ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+.about_banner_area_content ul li a {
+    color: #fff;
+    display: block;
+    padding: 0 10px;
+}
+.about_banner_area_content ul li:before {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+    
+}
+.about_banner_area_content ul li:last-child:before {
+    display: none;
+}
+
+/* this code is for about page service area */
+.about_page_single_service {
+    padding-bottom: 50px;
+    padding-right: 25px;
+    position: relative;
+}
+.about_page_single_service h3 {
+    font-size: 24px;
+    color: #22313f;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+.about_page_single_service h3 span {
+    color: #00beff;
+}
+.about_page_single_service p {
+    font-size: 14px;
+    color: #9d9d9d;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+}
+.service_area_right_content > .row > div {
+    position: relative;
+}
+.service_area_right_content > .row > div:nth-child(odd):before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #ffffff;
+    top: 0;
+    left: 93%;
+}
+.service_area_right_content > .row > div:nth-child(1):after, .service_area_right_content > .row > div:nth-child(2):after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color:#ffffff;
+    top: 93%;
+    left: 0;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*    5.     service_area CSS
+/*-----------------------------------------------------------------------------------*/
+.hide {
+    display: initial!important;
+}
+.service_area{
+    background-color: #f6f6f6;
+}
+.service_area_right_content {
+    padding-left: 40px;
+    position: relative;
+}
+.service_area_left_content > img {
+    width: 100%;
+}
+.service_area_left_text {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: calc(100% - 60px);
+    height: calc(100% - 30px);
+    background-color: rgba(34,49,63,.95);
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    line-height: 32px;
+    border-radius: 30px 0 30px 0;
+}
+.service_left_table {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.service_left_cell {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.service_left_cell p{
+    font-size: 15px;
+    padding:0 9px;
+}
+.service_area_left_content > img {
+    border-radius: 30px 0 30px 0;
+}
+.service_area .vertical .carousel-inner {
+    height: 100%;
+}
+.service_area .carousel.vertical .active {
+    top: 0;
+}
+
+.service_area .carousel.vertical .next {
+    top: 400px;
+}
+.service_area .carousel.vertical .prev {
+    top: -400px;
+}
+.service_area .carousel.vertical .next.left,
+.service_area .carousel.vertical .prev.right {
+    top: 0;
+}
+.service_area .carousel.vertical .active.left {
+    top: -400px;
+}
+.service_area .carousel.vertical .active.right {
+    top: 400px;
+}
+.service_area .carousel.vertical .item {
+    left: 0;
+}
+.service_area .carousel-control.left, .service_area .carousel-control.right {
+    background-image: none;
+}
+.single_service_right_content {
+  overflow: hidden;
+    border: 1px solid #ededed;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: white;
+    box-shadow: 0px 0px 20px 0px;
+}
+.single_service_right_content_icon {
+    width: 40px;
+    float: left;
+    line-height: 100px;
+}
+.single_service_right_content_text {
+    padding-left: 70px;
+    padding-top: 7px;
+}
+.single_service_right_content_text h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.single_service_right_content_text h4 a {
+    color: #22313f;
+}
+.single_service_right_content_text p {
+    font-size: 13px;
+    line-height: 26px;
+}
+.service_area .carousel.slide.vertical {
+    padding-top: 40px;
+}
+.service_area_control {
+    background-color: #dadcdf;
+    color: #ffffff;
+    font-size: 16px;
+    height: 30px;
+    left: auto;
+    line-height: 30px;
+    position: absolute;
+    right: -50px;
+    text-align: center;
+    top: 50%;
+    width: 30px;
+}
+.service_area_control.left {
+    top: 40%;
+}
+.service_area_control:hover {
+    background-color: #22313f;
+    color: #fff;
+}
+/*-----------------------------------------------------------------------------------*/
+/*    5.1     service_page CSS
+/*-----------------------------------------------------------------------------------*/
+.service_page .accordion_area_top {
+    margin-bottom: 0;
+}
+.service_page .single_service_right_content:hover {
+    box-shadow: 0 0 38px 0 rgba(0,0,0,.08);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    5.2     single_service_page CSS
+/*-----------------------------------------------------------------------------------*/
+.service-lists{
+    list-style: circle;
+    padding-left: 20px;
+}
+.service-lists li{
+    list-style-type: disc;
+}
+.single_service_main_content_wrapper .widget_service_link ul li.current_menu_item {
+    border-radius: 0;
+    background-color: #00beff;
+}
+.single_service_main_content_wrapper .widget_service_link ul li.current_menu_item .widget_service_link_text h5 {
+    color: #fff;
+}
+.single_service_main_content_wrapper .widget_service_link ul li.current_menu_item .widget_service_link_icon img {
+    filter: invert(100%);
+}
+.single_service_main_content_wrapper .widget_service_link ul li {
+    overflow: hidden;
+    border: 1px solid #e2e2e2;
+    border-radius: 30px 0 30px 0;
+    margin-bottom: 6px;
+    background-color: #fff;
+}
+.single_service_main_content_wrapper .widget_service_link ul li a {
+    padding: 25px;
+    display: block;
+}
+.single_service_img_content_left > img {
+    width: 100%;
+}
+.widget_service_link_icon {
+    width: 30px;
+    float: left;
+}
+.widget_service_link_text h5 {
+    padding-left: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 30px;
+    color: #22313f;
+}
+.single_service_main_content_wrapper .widget_service_link ul li:hover {
+    background-color: #00beff;
+    border-radius: 0;
+}
+.single_service_main_content_wrapper .widget_service_link ul li:hover .widget_service_link_text h5 {
+    color: #fff;
+}
+.single_service_main_content_wrapper .widget_service_link ul li:hover .widget_service_link_icon img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="1 0" /><feFuncG type="table" tableValues="1 0" /><feFuncB type="table" tableValues="1 0" /></feComponentTransfer></filter></svg>#filter');
+    -webkit-filter:invert(100%);
+    filter:invert(100%);
+}
+.widget_download_link {
+    margin-top: 40px;
+    background: url(../img/widget_bg.jpg) no-repeat scroll center center;
+    position: relative;
+    padding: 25px;
+    border-radius: 30px 0 30px 0;
+}
+.widget_download_link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(26,36,46,0.92);
+    border-radius: 30px 0 30px 0;
+}
+.widget_download_link h2.section_hedings_white {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.widget_download_link_content {
+    position: relative;
+    z-index: 9;
+}
+.widget_download_link_content ul {
+    margin-top: 30px;
+}
+.widget_download_link_content ul li {
+    display: block;
+    border-bottom: 1px solid #445d75;
+    padding: 10px 0;
+}
+.widget_download_link_content ul li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.widget_download_link_content ul li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.single_service_img_content {
+    background: url(../img/header_top_bg.jpg) repeat scroll 0 0;
+}
+.single_service_img_content_left img {
+    border-right: 8px solid #fff;
+    border-bottom: 8px solid #fff;
+    border-radius: 0 0 30px 0;
+}
+.single_service_img_content_right {
+    font-size: 14px;
+    color: #bed8f1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 30px;
+    padding: 15px 15px 15px 10px;
+}
+.single_service_text_content article {
+    font-size: 16px;
+    font-weight: 300;
+    color: #999999;
+    line-height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px 0;
+}
+.single_service_main_content {
+    padding-left: 45px;
+}
+.single_content_form_content {
+    margin-top: 30px;
+}
+.single_content_form_content article {
+    font-size: 16px;
+    font-weight: 300;
+    color: #999999;
+    line-height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0;
+}
+.single_content_form_content_left {
+    margin-top: 30px;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*    7.     choose_us_area CSS
+/*-----------------------------------------------------------------------------------*/
+.choose_us_area.section_padding_100 {
+    padding: 100px 0 138px;
+}
+.choose_us_area {
+    background-size: 30%;
+    position: relative;
+}
+.choose_us_area .choose_us_area_left img {
+    border-radius: 30px 0 30px 0;
+    border: 10px solid #fff;
+    box-shadow: 0 0 32px 0 rgba(0,0,0,.14);
+    z-index: 1;
+}
+.choose_us_area .choose_us_area_left img.shadow {
+    opacity: 0.07;
+    filter: alpha(opacity=7);
+    position: absolute;
+    right: 170px;
+    top: 70px;
+    z-index: -1;
+    border: none;
+}
+.choose_us_area_right {
+    line-height: 32px;
+}
+.choose_us_area_right .section_hedings {
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+.choose_us_area_right ul {
+    padding-top: 30px;
+    overflow: hidden;
+}
+.choose_us_area_right ul li {
+    width: 50%;
+    float: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #212121;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.choose_us_area_right ul li span {
+    font-size: 24px;
+    color: #929292;
+    width: 50px;
+    vertical-align: middle;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    8.     accordion_area_top CSS
+/*-----------------------------------------------------------------------------------*/
+.accordion_area_top {
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 9;
+}
+.accordion_top_wrapper {
+    background-color: #22313f;
+    padding: 15px;
+    border-radius: 30px 0 30px 0;
+}
+.accordion_area_top_main_content {
+    border: 1px solid #fff;
+    padding: 40px;
+    border-radius: 30px 0 30px 0;
+}
+.accordion_area_top_main_content {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+.accordion_area_top_main_content h3 {
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.accordion_button_wrapper {
+    width: 250px;
+    height: 60px;
+    background-color: #00beff;
+    position: relative;
+    margin-top: 15px;
+    position: relative;
+}
+.accordion_top_button_area {
+    width: 240px;
+    height: 50px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 9999;
+}
+.accordion_top_button_area a {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    9.     accordion_area CSS
+/*-----------------------------------------------------------------------------------*/
+.accordion_area.section_padding_100 {
+    padding-top: 135px;
+    padding-bottom: 60px;
+}
+.accordion_area .section_hedings_white, .accordion_area .section_hedings {
+    margin-bottom: 40px;
+}
+.accordion_area {
+    position: relative;
+    background-color: #f6f6f6;
+}
+.accordion_area .container.accordion_container {
+    position: relative;
+    z-index: 99;
+}
+.accordion_area:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url(../img/accordion_area_bg.jpg) no-repeat scroll 0 0 / cover;
+}
+.accordion_area:after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(20,30,39,.90);
+}
+.accordion_slider_wrapper {
+    background-color: #fff;
+    border-radius: 30px 0 30px 0;
+    padding: 35px 48px;
+}
+.accordion_slider_item p{
+    color: #141d25;
+    font-weight: 400;
+    line-height: 22px;
+}
+.accordion_slider_item blockquote {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    color: #a6a6a6;
+    line-height: 28px;
+    padding-bottom: 25px;
+}
+.accordion_slider_item h3 {
+    font-size: 16px;
+    color: #22313f;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+.accordion_slider_item h5 {
+    font-size: 12px;
+    color: #979797;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding-bottom: 2px;
+}
+.accordion_slider_wrapper .owl-dots {
+    bottom: -40px;
+    left: 0;
+    position: absolute;
+}
+.accordion_slider_wrapper .owl-dot {
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin-right: 5px;
+    width: 10px;
+    border: 1px solid #fff;
+}
+.accordion_slider_wrapper .owl-dot.active {
+    border: 1px solid #00beff;
+    background-color: transparent;
+}
+.ask_question_main_content {
+    padding-left: 70px;
+    min-height: 400px;
+}
+.ask_question_panel {
+    padding: 20px;
+}
+.ask_question_main_content a.collapsed .question_ask_panel_title {
+    font-size: 14px;
+    color: #b9b9b9;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.ask_question_main_content .question_ask_panel_title {
+    color: #212121;
+    position: relative;
+}
+.ask_question_main_content .question_ask_panel_title i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 16px;
+    color: #212121;
+    margin-top: -8px;
+}
+.ask_question_main_content a.collapsed .question_ask_panel_title i.open_accordion, .ask_question_main_content .question_ask_panel_title i.close_accordion {
+    display: none;
+}
+.ask_question_main_content a.collapsed .question_ask_panel_title i.close_accordion {
+    display: block;
+}
+.ask_question_panel_body {
+    padding-top: 20px;
+    font-size: 12px;
+    color: #a7a7a7;
+    font-family: 'Raleway', sans-serif;
+}
+.ask_question_panel_body p{
+        color: #141d25;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 14px;
+}
+.ask_question_main_content .panel {
+    border: 1px solid #f0f0f0;
+    border-radius: 0;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.04);
+    margin-bottom: 20px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    12.     partner_area CSS
+/*-----------------------------------------------------------------------------------*/
+.partner_area .partner_area_left article {
+    padding: 50px 0;
+    line-height: 32px;
+}
+.partner_content {
+    margin-left: -11px;
+}
+.partner_content a {
+    width: 174px;
+    height: 100px;
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 15px;
+    margin-left: 11px;
+}
+.partner_area_right {
+    background-color: #22313f;
+    padding: 15px;
+    border-radius: 30px 0 30px 0;
+}
+.form_wrapper form input[type="text"], .form_wrapper form input[type="email"], .form_wrapper select {
+    width: 100%;
+    height: 53px;
+    border: 0;
+    background-color: #1a242e;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #5c758e;
+}
+.form_wrapper form {
+    margin-top: 30px;
+}
+.form_wrapper select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: #1a242e url(../img/select_array.png) no-repeat scroll 91% 53%;
+}
+.form_wrapper select option {
+    padding: 15px 20px;
+}
+.form_wrapper {
+    border: 2px solid #fff;
+    padding: 30px 20px;
+    border-radius: 30px 0 30px 0;
+}
+.submit_button {
+    background-color: #00beff;
+    width: 240px;
+    height: 58px;
+    position: relative;
+}
+.form_wrapper form input[type="submit"] {
+    width: 230px;
+    height: 48px;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 999;
+    background-color: transparent;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    13.1     footer_top_area CSS
+/*-----------------------------------------------------------------------------------*/
+.footer_top {
+    background-color: #22313f;
+}
+.footer_top .widget > .widget_title {
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 55px;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+.footer_top .widget_para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+.footer_top .widget_footer_logo {
+    padding-bottom: 7px;
+}
+.footer_top .widget_footer_social {
+    padding-top: 35px;
+}
+.footer_top .widget_footer_social a {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #445559;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #202e31;
+    margin-right: 3px;
+}
+.footer_top .widget_footer_social a i {
+    padding-left: 2px;
+}
+.footer_top .widget ul li {
+    display: block;
+    padding-bottom: 15px;
+}
+.footer_top .widget ul li a {
+    color: #72868a;
+}
+.footer_top .widget.widget_contact ul li {
+    overflow: hidden;
+}
+.footer_top .widget.widget_contact ul li h4 {
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #72868a;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.footer_top .widget .widget_contact_detail {
+    padding-left: 90px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #72868a;
+    letter-spacing: 2px;
+}
+.footer_top .widget #instafeed img {
+    width: 75px;
+    height: 75px;
+}
+.footer_top .widget #instafeed a {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+}
+/*-----------------------------------------------------------------------------------*/
+/*    13.2     footer_bottom_area CSS
+/*-----------------------------------------------------------------------------------*/
+.footer_bottom {
+    background-color: #1c2834;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #738d93; 
+    line-height: 70px;
+}
+.footer_bottom_right {
+    text-align: right;
+}
+.footer_bottom_right i, .footer_bottom_right span {
+    color: #fdc236;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*    15.     preloader CSS
+/*-----------------------------------------------------------------------------------*/
+body.preloader_active {
+    position: absolute;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+#preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 99999999999;
+}
+.preloader_spinner {
+    background: url(../img/preloader.gif) no-repeat scroll center center;
+    display: block;
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 999999999999;
+    margin-top: -32px;
+    margin-left: -32px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*    16.     contact_area CSS
+/*-----------------------------------------------------------------------------------*/
+.contact_one #my_location {
+    height: 345px;
+}
+.contact_two #my_location {
+    height: 420px;
+}
+.contact_one .contact_page_headings, .contact_two .contact_page_headings {
+    font-size: 20px;
+    color: #22313f;
+    font-weight: 700;
+    position: relative;
+    padding: 0 30px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+.contact_one .contact_page_headings:before, .contact_two .contact_page_headings:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 12px;
+    width: 12px;
+    background-color: #22313f;
+    margin-top: -6px;
+}
+.contact_one .contact_left_content form input[type=text], .contact_one .contact_left_content form input[type=email], .contact_two .contact_right form input[type=text], .contact_two .contact_right form input[type=email] {
+    height: 50px;
+}
+.contact_one .contact_left_content form input[type=text], .contact_one .contact_left_content form input[type=email], .contact_one .contact_left_content textarea, .contact_two .contact_right form input[type=text], .contact_two .contact_right form input[type=email], .contact_two .contact_right textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #00beff;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    border-radius: 30px 0 30px 0;
+}
+.contact_one .contact_left_content textarea, .contact_two .contact_right textarea {
+    resize: none;
+    height: 150px;
+    padding: 15px;
+}
+.contact_two .single_contact {
+    overflow: hidden;
+    padding-bottom: 35px;
+}
+.contact_two .single_contact_icon {
+    width: 70px;
+    height: 70px;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 70px;
+    font-size: 26px;
+    color: #707070;
+    float: left;
+}
+.contact_two .single_contact_text {
+    padding-left: 90px;
+}
+.contact_two .single_contact_text h2 {
+    color: #383838;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.contact_two .single_contact_text a {
+    font-size: 14px;
+    color: #989898;
+}
+.contact_page_btn {
+    background-color: #00beff;
+    height: 60px;
+    margin-top: 20px;
+    width: 250px;
+    position: relative;
+}
+.contact_one .contact_left_content form input[type=submit], .contact_two .contact_right form input[type=submit] {
+    border: 1px solid #fff;
+    background-color: transparent;
+    width: 240px;
+    height: 50px;
+    margin: 5px 0 0 5px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 999;
+}
+
+/* this code is for thank-you.html */
+.contact_record_text {
+    font-weight: 700;
+    color: #08953d;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+/************************************** 
+            This Code is For Responsive 
+        ******************************************/
+
+/* ========================================
+                For Large Screen
+================================================= */
+@media only screen and (min-width: 1920px) {
+}
+
+/* ========================================
+                For Medium_Large Screen
+================================================= */
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    .about_page .advisor_area.section_padding_100 {
+        padding: 100px 0 0;
+    }
+    .advisor_page .advisor_area figure {
+        margin-bottom: 115px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 992px) {
+   .hides{
+    display: none;
+   }
+}
+/* ============================================
+                For Medium Screen
+============================================== */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+/* =-=-=-=-=- 1 default =-=-=-=-=- */
+    .section_hedings, .section_hedings_white {
+        font-size: 26px;
+    }
+    
+/* =-=-=-=-=- 2.1 header_top =-=-=-=-=- */
+    .header_top_wrapper ul li a {
+        font-size: 11px;
+    }
+    
+/* =-=-=-=-=- 4 about_area =-=-=-=-=- */
+    .about_icon {
+        width: 30px;
+    }
+    .about_text span {
+        font-size: 18px;
+    }
+    .about_text {
+        font-size: 12px;
+        padding-left: 45px;
+    }
+    
+    /* this code is for about page */
+    .about_page .advisor_area.section_padding_100 {
+        padding: 100px 0 0;
+    }
+    .about_page .about_area.section_padding_100 {
+        padding: 120px 0 40px;
+    }
+    
+/* =-=-=-=-=- 5. service_area =-=-=-=-=- */  
+    .service_area_left_text {
+        font-size: 18px;
+    }
+    .service_area_right_content {
+        padding-left: 0px;
+    }
+    .single_service_right_content {
+        padding: 10px;
+    }
+    .single_service_right_content_text {
+        padding-left: 55px;
+    }
+    .service_area_control {
+        right: -35px;
+    }
+    
+/* =-=-=-=-=- 5.1 service page =-=-=-=-=- */
+    .service_page .accordion_button_wrapper {
+        width: 211px;
+    }
+    .service_page .accordion_top_button_area {
+        width: 200px;
+    }
+    
+/* =-=-=-=-=- 5.2 single_service page =-=-=-=-=- */
+    .single_service_page .single_service_img_content_right {
+        font-size: 13px;
+        line-height: 25px;
+        padding: 8px 15px 8px 0;
+    }
+    .single_service_page .submit_button {
+        width: 151px;
+    }
+    .single_service_page .form_wrapper form input[type="submit"] {
+        width: 140px;
+    }
+    .single_service_page .form_wrapper select {
+        background: #1a242e url("../img/select_array.png") no-repeat scroll 98% 53%;
+        font-size: 12px;
+    }
+    
+/* =-=-=-=-=- 6 counter_area =-=-=-=-=- */    
+    .counter_area_content ul li {
+        padding: 20px 12px;
+    }
+    .counter_number h3 {
+        font-size: 30px;
+    }
+    
+/* =-=-=-=-=- 7. choose area =-=-=-=-=- */  
+    .choose_us_area.section_padding_100 {
+        padding: 100px 0;
+    }
+    
+/* =-=-=-=-=- 8 accordion_area_top  =-=-=-=-=- */     
+    .accordion_button_wrapper {
+        width: 230px;
+    }
+    .accordion_top_button_area {
+        width: 220px;
+    }
+    
+/* =-=-=-=-=- 9 accordion_area  =-=-=-=-=- */
+    .ask_question_main_content {
+        padding-left: 25px;
+    }
+    .ask_question_main_content a.collapsed .question_ask_panel_title {
+        font-size: 13px;
+    }
+    
+/* =-=-=-=-=- 11. blog area  =-=-=-=-=- */   
+    .blog_area {
+        height: 400px;
+    }
+    .blog_page figure > figcaption h3 {
+        font-size: 14px;
+    }
+    .blog_page figure > figcaption {
+        height: 90px;
+    }
+    .blog_page figure:hover figcaption {
+        height: 110px;
+    }
+    
+/* =-=-=-=-=- 12 partner_area  =-=-=-=-=- */
+    .submit_button {
+        width: 200px;
+    }
+    .form_wrapper form input[type="submit"] {
+        width: 190px;
+    }
+    .form_wrapper form input[type="text"], .form_wrapper form input[type="email"], .form_wrapper select {
+        padding: 0 8px;
+    }
+
+}
+@media only screen and (max-width: 991px)
+{
+.service_area_right_content {
+    padding-left: 0;
+    padding-top: 50px;
+}
+.hides{
+    display: none!important;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+/* =-=-=-=-=- 1 default =-=-=-=-=- */    
+    .section_hedings, .section_hedings_white {
+        font-size: 22px;
+    }
+   .hide-small{
+        display: none;
+    }
+/* =-=-=-=-=- 2 header area =-=-=-=-=- */    
+    .header_area .mainmenu ul#nav li a {
+        font-size: 11px;
+        padding-bottom: 33px;
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+ 
+/* =-=-=-=-=- 3 hero_area =-=-=-=-=- */
+    .carousel-caption h3 {
+        font-size: 32px;
+    }
+    
+/* =-=-=-=-=- 2.1 header_top =-=-=-=-=- */    
+    .header_top_wrapper ul li a {
+        font-size: 11px;
+    }
+    .header_area .mainmenu ul#nav li a {
+        font-size: 11px;
+        padding-bottom: 31px;
+    } 
+    
+/* =-=-=-=-=- 4. about =-=-=-=-=- */
+    .single_about_area_content {
+        width: 50%;
+    }
+    
+/* =-=-=-=-=- 4.1 about page =-=-=-=-=- */ 
+    .about_page_single_service h3 {
+        font-size: 20px;
+    }
+    .about_page .partner_content a {
+        width: 46%;
+    }
+    .about_page .advisor_area.section_padding_100 {
+        padding: 100px 0 0;
+    }
+    .about_page .about_area {
+        padding: 120px 0 0;
+    }
+    .about_page .partner_area.section_padding_100 {
+        padding: 50px 0 100px;
+    }
+    .about_page .service_area_left_text {
+        font-size: 16px;
+    }
+    
+/* =-=-=-=-=- 5 service =-=-=-=-=- */ 
+    .service_area_left_text {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .service_area_right_content {
+        padding-left: 0;
+    }
+    .single_service_right_content_text {
+        padding-left: 40px;
+    }
+    .single_service_right_content_icon {
+        width: 25px;
+    }
+    .single_service_right_content_text h4 {
+        font-size: 13px;
+    }
+    .single_service_right_content {
+        padding: 10px;
+    }
+    .service_area_control {
+        top: 100%;
+        right: 0;
+    }
+    .service_area_control.left {
+        top: 90%;
+    }  
+    
+/* =-=-=-=-=- 5.2 single_service page =-=-=-=-=- */
+    .single_service_page .widget_service_link_text h5 {
+        font-size: 14px;
+        padding-left: 45px;
+    }
+    .single_service_page .single_service_main_content {
+        padding-left: 0;
+    }
+    .single_service_page .single_service_img_content_right {
+        padding: 15px 15px 15px 15px;
+    }
+    .single_service_page .single_service_text_content article {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .single_service_page .single_content_form_content_left {
+        margin-top: 8px;
+    }
+    .single_service_page .partner_area_right {
+        margin-top: 30px;
+    }
+    
+/* =-=-=-=-=- 6. counter_area =-=-=-=-=- */
+    .counter_area_content ul li {
+        padding: 20px 12px;
+    }
+    .counter_number h3 {
+        font-size: 38px;
+        width: 100%;
+        text-align: center;
+    }
+    .counter_text {
+        text-align: center;
+        float: none;
+    }
+    
+/* =-=-=-=-=- 7. choose area =-=-=-=-=- */
+    .choose_us_area_right ul li span {
+        width: 35px;
+    }
+    .choose_us_area.section_padding_100 {
+        padding: 100px 0 70px;
+    }
+/* =-=-=-=-=- 9. accoordion area =-=-=-=-=- */  
+    .accordion_area:before, .accordion_area:after {
+        width: 45%;
+    }
+    .ask_question_main_content {
+        padding-left: 30px;
+    }
+    .ask_question_panel {
+        padding: 10px;
+    }
+    .ask_question_main_content a.collapsed .question_ask_panel_title {
+        font-size: 12px;
+    }
+ 
+/* =-=-=-=-=- 10. advisor area =-=-=-=-=- */     
+    .advisor_area figure {
+        margin-bottom: 110px;
+    }
+    
+/* =-=-=-=-=- 11. blog area =-=-=-=-=- */ 
+    .blog_area {
+        height: 350px;
+        margin-bottom: 80px;
+    }
+    .blog_area figure > figcaption {
+        padding: 10px;
+    }
+    .blog_area figure > figcaption h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .blog_page figure > figcaption h3 {
+        font-size: 14px;
+    }
+    .blog_page figure > figcaption {
+        height: 90px;
+    }
+    .blog_page figure:hover figcaption {
+        height: 110px;
+    }
+    .single_blog_page .single_page_blog_comments form input[type="text"], .single_blog_page .single_page_blog_comments form input[type="email"], .single_blog_page .single_page_blog_comments form textarea {
+        width: 100%;
+    }
+    .single_blog_page .blog_text h3 {
+        font-size: 20px;
+    }
+    .single_blog_page .single_blog_post_footer ul li {
+        width: 100%;
+    }
+    .single_blog_page .single_blog_post_footer ul li:last-child {
+        text-align: left;
+    }
+/* =-=-=-=-=- 12. partner area =-=-=-=-=- */ 
+    .form_wrapper form input[type="text"], .form_wrapper form input[type="email"], .form_wrapper select {
+        padding: 0 8px;
+    }
+    .form_wrapper select {
+        background: #1a242e url("../img/select_array.png") no-repeat scroll 97% 53%;
+    }
+    .submit_button {
+        width: 180px;
+    }
+    .form_wrapper form input[type="submit"] {
+        width: 169px;
+    }
+    
+/* =-=-=-=-=- 13.1 footer_top =-=-=-=-=- */
+    .footer_top {
+        padding: 95px 0 70px;
+    }
+    .footer_top .widget {
+        padding-bottom: 30px;
+    }
+    
+/* =-=-=-=-=- 14.1 project area version_2 page =-=-=-=-=- */    
+    .project_area figure {
+        width: 45%;
+    }
+    
+/* =-=-=-=-=- 14.2 project area version_3 page =-=-=-=-=- */     
+    .project_version_three .project_area figure {
+        width: 48%;
+    }
+
+/* =-=-=-=-=- 17 contact area =-=-=-=-=- */ 
+    .contact_one .contact_page_headings, .contact_two .contact_page_headings {
+        font-size: 18px;
+    }
+}
+
+/* ============================================
+                For Small mobile
+============================================== */
+
+@media only screen and (max-width: 767px) {
+    /* =-=-=-=-=- 1. default =-=-=-=-=- */
+    .section_padding_100 {
+        padding: 70px 0;
+    }
+    .section_hedings, .section_hedings_white {
+        font-size: 22px;
+    }
+    .hides{
+        display: none;
+    }
+    /* =-=-=-=-=- 2. header_area =-=-=-=-=- */ 
+    /* ____________ this code is for mobile-menu ____________*/
+    .header_top_wrapper, .search_box {
+        display: none;
+    }
+    .mean-container a.meanmenu-reveal span {
+        background-color: #11171d;
+    }
+    .mean-container a.meanmenu-reveal {
+        color: #11171d;
+        padding: 28px 15px;
+    }
+    .header_area .logo {
+        left: 12px;
+        position: absolute;
+        top: 12px;
+        z-index: 999999;
+        padding: 0;
+    }
+    .mean-container .mean-bar {
+        padding: 0;
+        background-color: transparent;
+    }
+    .mean-container .mean-nav {
+        margin-top: 75px;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        line-height: 35px;
+        padding: 8px !important;
+        border: 0 !important;
+    }
+/* =-=-=-=-=- 3. hero_area =-=-=-=-=- */ 
+    .hero_area .carousel.slide, .hero_area .carousel-inner {
+        height: 400px;
+    }
+    .hero_area_control {
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
+        top: 40%;
+    }
+    .hero_area_control.left {
+        left: 0;
+    }
+    .hero_area_control.right {
+        right: 0;
+    }
+    .carousel-caption h3.hero_area_top_text {
+        font-size: 13px;
+    }
+    .carousel-caption h3.hero_bold_text {
+        font-size: 18px;
+        padding: 35px 35px 0;
+    }
+    /* =-=-=-=-=- 4. about_area =-=-=-=-=- */ 
+    .single_about_area_content {
+        width: 100%;
+    }
+    .about_area_left_content {
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+    .about_banner_area_content h3 {
+        font-size: 20px;
+    }
+    
+    /* this code is for about page */
+    .about_page .service_area_right_content > .row > div:nth-child(2n+1):before {
+        width: 0;
+    }
+    .about_page .service_area_right_content > .row > div:nth-child(1):after, .about_page .service_area_right_content > .row > div:nth-child(2):after {
+        width: 0;
+    }
+    .about_page .advisor_area.section_padding_100 {
+        padding: 70px 0 0;
+    }
+    .about_page .about_text span {
+        font-size: 20px;
+    }
+    .about_page .about_text {
+        font-size: 13px;
+    }
+    .about_page .about_page_single_service h3 {
+        font-size: 20px;
+    }
+  /* =-=-=-=-=- 5. service area =-=-=-=-=- */   
+    .service_area_right_content {
+        padding-left: 0;
+        padding-top: 0px;
+    }
+    .single_service_right_content {
+        padding: 15px;
+    }
+    .single_service_right_content_text {
+        padding-left: 55px;
+    }
+    .service_area_control.left {
+        top: 103%;
+    }
+    .service_area_control {
+        top: 97%;
+        right: 0;
+    }
+    /* =-=-=-=-=- 5.1 service page =-=-=-=-=- */
+    .service_page .single_service_right_content {
+        padding: 15px 10px;
+    }
+    .service_page .single_service_right_content_text {
+        padding-left: 55px;
+    }
+    .service_page .accordion_area_top_main_content {
+        padding: 20px;
+    }
+    .service_page .accordion_area_top_main_content h3 {
+        font-size: 20px;
+    }
+    .service_page .accordion_button_wrapper {
+        width: 191px;
+    }
+    .service_page .accordion_top_button_area {
+        width: 180px;
+    }
+    .service_page .accordion_area_top.section_padding_100 {
+        padding: 30px 0 70px;
+    }
+   
+    .single_service_page .about_banner_area_content h3 {
+        font-size: 22px;
+    }
+    .single_service_img_content_right {
+        padding: 15px 15px 15px 15px;
+    }
+    .single_service_page .about_banner_area_content ul li {
+        font-size: 12px;
+    }   
+    
+    .single_service_page .single_service_main_content {
+        padding-left: 0;
+    }
+   
+    .single_service_text_content article, .single_content_form_content article {
+        font-size: 13px;
+        line-height: 26px;
+    }
+    
+   
+    .single_content_form_content_right {
+        margin-top: 30px;
+    }
+    .form_wrapper {
+        padding: 30px 10px;
+    }
+    
+    .choose_us_area_right ul li {
+        width: 100%;
+    }
+    .choose_us_area_right {
+        margin-top: 90px;
+    }
+    .choose_us_area.section_padding_100 {
+        padding: 100px 0 50px;
+    }
+/* =-=-=-=-=- 8. accordion area top =-=-=-=-=- */ 
+    .accordion_area_top_main_content {
+        padding: 20px;
+    }
+    .accordion_area_top_main_content h3 {
+        font-size: 18px;
+    }
+    .accordion_button_wrapper {
+        width: 181px;
+    }
+    .accordion_top_button_area {
+        width: 170px;
+    }
+    
+/* =-=-=-=-=- 9. accordion area =-=-=-=-=- */ 
+    .accordion_area:before {
+        width: 100%;
+    }
+    .accordion_area:after {
+        width: 100%;
+    }
+    .ask_question_main_content {
+        padding-left: 0;
+        margin-top: 100px;
+    }
+    .accordion_area .section_hedings_white, .accordion_area .section_hedings {
+        color: #fff;
+        font-size: 16px;
+        background: rgba(0, 0, 0, 0) url("../img/section_headings_white_bg.png") no-repeat scroll 0 bottom;
+    }
+    .accordion_area .ask_question_panel {
+        padding: 10px;
+    }
+    .ask_question_main_content {
+        min-height: auto;
+    }   
+
+    
+/* =-=-=-=-=- 13.1 footer_top area =-=-=-=-=- */
+    .footer_top {
+        padding: 70px 0 22px;
+    }
+    .footer_top .widget {
+        padding-bottom: 50px;
+    }
+    .footer_top .widget > .widget_title {
+        padding-bottom: 25px;
+    }
+    
+/* =-=-=-=-=- 13.2 footer_bottom area =-=-=-=-=- */
+    .footer_bottom_left > p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .footer_bottom {
+        line-height: 35px;
+        padding: 10px 0;
+    }
+    .footer_bottom_right {
+        text-align: center;
+    }
+    
+
+/* =-=-=-=-=- contact page =-=-=-=-=- */ 
+    .contact_right_content {
+        margin-top: 50px;
+    }
+}
+
+/* ============================================
+                For large mobile
+============================================== */
+ 
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+/* =-=-=-=-=- 1 default =-=-=-=-=- */    
+    .section_hedings, .section_hedings_white {
+        font-size: 26px;
+    }
+    
+/* =-=-=-=-=- 3 hero area =-=-=-=-=- */     
+    .carousel-caption h3.hero_area_top_text {
+        font-size: 16px;
+    }
+    .carousel-caption h3.hero_bold_text {
+        font-size: 24px;
+    }
+ 
+/* =-=-=-=-=- 4 about area =-=-=-=-=- */     
+    .single_about_area_content {
+        width: 33%;
+    }
+    .about_text span {
+        font-size: 20px;
+    }
+    .about_text {
+        padding-left: 45px;
+    }  
+    .about_banner_area_content h3 {
+        font-size: 30px;
+    }
+    
+    /* this code is for about page */
+    .about_page .advisor_area .col-xs-12 {
+        padding: 0 100px;
+    }
+    
+
+/* =-=-=-=-=- 5.2 single_service page =-=-=-=-=- */
+    .single_service_text_content article, .single_content_form_content article {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    
+/* =-=-=-=-=- 6 counter area =-=-=-=-=- */   
+    .counter_area_content ul li {
+        width: 49%;
+    }
+    
+/* =-=-=-=-=- 7 choose-us area =-=-=-=-=- */ 
+    .choose_us_area_right ul li {
+        width: 50%;
+    }    
+
+    .form_wrapper form input[type="text"], .form_wrapper form input[type="email"], .form_wrapper select {
+        padding: 0 20px;
+    }
+ 
+
+}
